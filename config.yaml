@@ -1,0 +1,63 @@
+# ==============================================
+# PREMIUM PRODUCTS AI SYSTEM - CONFIGURATION
+# ==============================================
+
+# Business Information
+business_name: "Premium Handmade Products"
+timezone: "Asia/Kolkata"
+
+# WhatsApp Configuration
+whatsapp:
+  phone_number: "+919XXXXXXXXX"  # ← CHANGE THIS (Your business number)
+  auto_reply: true
+  max_messages_per_hour: 20
+
+# Social Media Configuration
+social_media:
+  facebook_page_id: ""
+  instagram_business_id: ""
+  access_token: ""
+  posting_times:
+    - "11:00"
+    - "18:00"
+
+# Google Sheets Configuration
+google_sheets:
+  spreadsheet_id: ""
+  credentials_file: "google_credentials/credentials.json"
+
+# Email Configuration
+email:
+  gmail_address: "yourbusiness@gmail.com"
+  app_password: ""
+  check_interval: 15
+
+# Inventory Configuration
+inventory:
+  low_stock_threshold: 20
+  auto_reorder: false
+  reorder_quantity: 50
+
+# Payment Configuration
+payments:
+  upi_id: "yourname@upi"
+  qr_code_path: "static/qr_codes/upi_qr.png"
+
+# Product Categories
+categories:
+  - soap
+  - facewash
+  - serum
+  - shampoo
+  - cream
+  - oil
+
+# Language Support
+languages:
+  - en
+  - hi
+  - hinglish
+
+# ==============================================
+# IMPORTANT: Update this file before running
+# ==============================================
