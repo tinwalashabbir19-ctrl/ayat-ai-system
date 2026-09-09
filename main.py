@@ -36,6 +36,7 @@ logger = setup_logging()
 # Flask for web dashboard (for Render health checks)
 from flask import Flask, jsonify, render_template_string, request
 app = Flask(__name__)
+
 # ==============================================
 # ORCHESTRATOR CLASS
 # ==============================================
@@ -202,7 +203,8 @@ class Orchestrator:
         db.close()
         
         logger.info("✅ Database initialized successfully")
- def create_sample_products(self):
+    
+    def create_sample_products(self):
         """Create sample products in the database"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
@@ -278,6 +280,7 @@ class Orchestrator:
         conn.close()
         
         logger.info(f"✅ {len(products)} sample products created!")
+
 # ==============================================
 # HEALTH CHECK ENDPOINT (For Render)
 # ==============================================
